@@ -3,13 +3,16 @@ import React from "react";
 // ALSO WTF is the split character on line 9?
 function DataBody({ users }) {
     function formatDate(date) {
-        const dateArray = date.split(".");
-        const year = dateArray[0];
-        const month = dateArray[1];
-        const dayArray = dateArray[2].split("T");
-        const day = dayArray[0];
-        const formattedDate = [month, day, year].join(".");
-        return formattedDate;
+        const dateSlice = date.slice(0,10);
+        const splitDate = dateSlice.split("-");
+        const year = splitDate[0];
+        const month = splitDate[1];
+        const day = splitDate[2];
+        const DOB = [month, day, year].join("-")
+        return DOB;
+       
+       // const formattedDate = [month, day, year].join(".");
+       // return formattedDate;
     }
 
     return (
@@ -36,7 +39,7 @@ function DataBody({ users }) {
                                     {email}
                                 </a>
                             </td>
-                            <td data-th="DOB" className="align-middle">
+                            <td data-th="dob" className="align-middle">
                                 {formatDate(dob.date)}
                             </td>
                         </tr>

@@ -1,5 +1,5 @@
 import React from "react";
-import DataBody from ".DataBody";
+import DataBody from "./DataBody";
 //import "../styles/DataTables.css";
 
 function DataTable({ headings, users, handleSort }) {
@@ -9,7 +9,7 @@ function DataTable({ headings, users, handleSort }) {
                 id="table"
                 className="table table-striped table-hover table-condensed"
             >
-                <thread>
+                <thead>
                     <tr>
                         {headings.map(({ name, width }) => {
                             return (
@@ -27,7 +27,7 @@ function DataTable({ headings, users, handleSort }) {
                             );
                         })}
                     </tr>
-                </thread>
+                </thead>
             
             <DataBody users={users} />
             </table>

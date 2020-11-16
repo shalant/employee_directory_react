@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import DataTable from "./DataTable";
 import Nav from "./Nav";
-import API from "../../utils/API";
+import API from "../utils/API";
 //import "../styles/DataArea.css";
 
 export default class DataArea extends Component {
@@ -11,7 +11,7 @@ export default class DataArea extends Component {
         filteredUsers: [{}]
     }
 
-    headings = [
+     headings = [
         { name: "Image", width: "10%" },
         { name: "Name", width: "10%" },
         { name: "Phone", width: "10%" },
@@ -96,6 +96,12 @@ render() {
                     users={this.state.filteredUsers}
                     handleSort={this.handleSort}
                 />
+
+
+
+
+            {this.state.order === 'descend' && <div> A B C </div> }
+            {this.state.order === 'ascend' && <div></div>}
             </div>
         </>
     );
