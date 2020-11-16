@@ -1,5 +1,5 @@
 import React from "react";
-import "../styles/DataBody.css";
+//import "../styles/DataBody.css";
 // ALSO WTF is the split character on line 9?
 function DataBody({ users }) {
     function formatDate(date) {
