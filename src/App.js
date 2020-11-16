@@ -1,13 +1,14 @@
 import logo from './logo.svg';
 import './App.css';
 import React, { useState } from 'react'
+import '../utils/API.js';
 
 function App() {
-  const wings = { title: 'Wings', price: 5.99, type: 'Appetizer' }
+  const wings = { title: 'Wings', price: 50000, type: 'Appetizer' }
   const fries = { title: 'Fries', price: 2.99, type: 'Side' }
   const ribs = { title: 'Ribs', price: 19.99, type: 'Main' }
   const pubFood = [wings, fries, ribs]
-
+  //GetUsers();
   const [food, setFood] = useState(pubFood);
   const [filterValue, setFilterValue] = useState('All') 
 
