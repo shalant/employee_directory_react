@@ -24,7 +24,6 @@ export default class DataArea extends Component {
             this.setState({
                 order: "ascend"
             })
-            console.log("being clicked");
         } else {
             this.setState({
                 order: "descend"
@@ -54,11 +53,11 @@ export default class DataArea extends Component {
                     }
                     //numerically
                     else if (heading === "name") {
-                        return b[heading].first.localeCompare(a[heading].first);
+                        return a[heading].first.localeCompare(b[heading].first);
                     } else {
                         return b[heading] - a[heading];
                     }
-                }
+                } 
 
         }
         const sortedUsers = this.state.filteredUsers.sort(compareFnc);
