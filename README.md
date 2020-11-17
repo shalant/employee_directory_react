@@ -12,5 +12,16 @@ Most of the code is obviously Javascript. A lot of packages were installed and y
 
 ## Screen shot
 
-! [screenshot] screenshot.png
+<img src="screenshot.png"/>
 
+## How to use
+
+Click on the gitpages link to the right to view the actual page. If you want to search by literally any query, the searchbox is what you want. To sort employees by name, click on the name column header.
+
+## Future development
+
+If I didn't have to spend time re-reviewing the intermediate class work, I would attempt to sort additional columns and add styling. Another tiny element I would have liked to add was a more appealing visual element on the sortable buttons.
+
+## Contact
+
+Send an e-mail to doug.rosenberg@gmail.com with questions, money, recipes, and input.
