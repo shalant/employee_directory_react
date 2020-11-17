@@ -24,6 +24,7 @@ export default class DataArea extends Component {
             this.setState({
                 order: "ascend"
             })
+            console.log("being clicked");
         } else {
             this.setState({
                 order: "descend"
