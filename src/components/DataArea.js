@@ -101,7 +101,7 @@ render() {
 
 
             {this.state.order === 'descend' && <div> A B C </div> }
-            {this.state.order === 'ascend' && <div></div>}
+            {this.state.order === 'ascend' && <div> C B A </div>}
             </div>
         </>
     );
